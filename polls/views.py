@@ -8,4 +8,4 @@ def index (request):
     return HttpResponse ("Hello, you're at the Poll Index")
 
 def suggestions(request):
-    return HttpResponse("hello")
+    return render(request, 'polls/suggestions.html' ,{})
